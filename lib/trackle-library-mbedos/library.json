@@ -1,0 +1,44 @@
+{
+    "build": {
+        "flags": [
+            "-Itrackle-library/include",
+            "-Itrackle-library/lib/tinydtls",
+            "-Itrackle-library/lib/tinydtls/aes",
+            "-Itrackle-library/lib/tinydtls/sha2",
+            "-Itrackle-library/lib/micro-ecc",
+            "-DIS_MBEDOS"
+        ],
+        "srcFilter": [
+            "+<trackle-library/src/chunked_transfer.cpp>",
+            "+<trackle-library/src/coap.cpp>",
+            "+<trackle-library/src/coap_channel.cpp>",
+            "+<trackle-library/src/diagnostic.cpp>",
+            "+<trackle-library/src/dtls_message_channel.cpp>",
+            "+<trackle-library/src/dtls_protocol.cpp>",
+            "+<trackle-library/src/events.cpp>",
+            "+<trackle-library/src/trackle.cpp>",
+            "+<trackle-library/src/trackle_interface.cpp>",
+            "+<trackle-library/src/logging.cpp>",
+            "+<trackle-library/src/diagnostic.cpp>",
+            "+<trackle-library/src/messages.cpp>",
+            "+<trackle-library/src/protocol.cpp>",
+            "+<trackle-library/src/protocol_defs.cpp>",
+            "+<trackle-library/src/publisher.cpp>",
+            "+<trackle-library/src/trackle_protocol_functions.cpp>",
+            "+<trackle-library/lib/tinydtls/aes/rijndael.c>",
+            "+<trackle-library/lib/tinydtls/aes/rijndael_wrap.c>",
+            "+<trackle-library/lib/tinydtls/sha2/sha2.c>",
+            "+<trackle-library/lib/tinydtls/ccm.c>",
+            "+<trackle-library/lib/tinydtls/crypto.c>",
+            "+<trackle-library/lib/tinydtls/dtls.c>",
+            "+<trackle-library/lib/tinydtls/dtls_debug.c>",
+            "+<trackle-library/lib/tinydtls/dtls_prng.c>",
+            "+<trackle-library/lib/tinydtls/dtls_time.c>",
+            "+<trackle-library/lib/tinydtls/hmac.c>",
+            "+<trackle-library/lib/tinydtls/netq.c>",
+            "+<trackle-library/lib/tinydtls/peer.c>",
+            "+<trackle-library/lib/tinydtls/session.c>",
+            "+<trackle-library/lib/micro-ecc/uECC.c>"
+        ]
+    }
+}

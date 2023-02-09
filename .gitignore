@@ -1,0 +1,4 @@
+.pio
+.vscode
+lib/trackle-library-mbedos/trackle-library
+/.fetch_dependencies.shelve
