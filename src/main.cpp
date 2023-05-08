@@ -37,12 +37,6 @@ void log_cb(const char *msg, int level, const char *category, void *attribute, v
   return;
 }
 
-void sleep_cb(uint32_t sleep)
-{
-  ThisThread::sleep_for(sleep);
-  return;
-}
-
 int connect_cb_udp(const char *address, int port)
 {
   sock.open(&net);
@@ -147,7 +141,6 @@ void trackle_thread()
   trackle_s->setReceiveCallback(receive_cb_udp);
   trackle_s->setConnectCallback(connect_cb_udp);
   trackle_s->setDisconnectCallback(disconnect_cb);
-  trackle_s->setSleepCallback(sleep_cb);
   trackle_s->setKeys(HARDCODED_PRIVATE_KEY);
 
   // Registering POST functions callable from cloud
